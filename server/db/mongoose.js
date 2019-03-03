@@ -33,9 +33,9 @@ mongoose.connect('mongodb://localhost:27017/TodoApp')
 //     console.error(err, "Todo is not saved");
 // })
 
-const newUser = new User({
-    text: 'Make the bed'
-});
+// const newUser = new User({
+//     text: 'Make the bed'
+// });
 
 // newUser.save().then(doc => {
 //     console.log('New user saved', doc);
