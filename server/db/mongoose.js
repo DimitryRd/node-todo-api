@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 const User = require('../models/user.js')
 
 mongoose.Promise = global.Promise
-mongoose.connect('mongodb://localhost:27017/TodoApp')
+mongoose.connect(process.env.MONGODB_URL || 'mongodb://localhost:27017/TodoApp')
 
 // const Todo = mongoose.model('Todos', {
 //     text: {
@@ -43,5 +43,5 @@ mongoose.connect('mongodb://localhost:27017/TodoApp')
 //     console.log(err, 'User is not saved');
 // });
 
-module.exports = {mongoose}
+module.exports = { mongoose }
 
